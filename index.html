@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <div id="div_geral">
+        <form id="form_links_iniciais">
+            <h1>Cadastrar Escritores ou Livros</h1>
+            <p class="links1" onclick="abrirForm('form_escritores'), mostrarLivrosNoFormPrincipal()">Escritores</p>
+            <p class="links1" onclick="abrirForm('form_links_cadastrar')">Cadastrar</p>
+        </form>
+        <form id="form_escritores">
+            <ul id="lista_principal"></ul>
+        </form>
+        <form id="form_links_cadastrar">
+            <section id="div_links">
+                <p id="link_escritor" onclick="abrirForm('link_escritor')">Escritores</p>
+                <p id="link_livros" onclick="abrirForm('link_livros'), PopularCombobox()">Livros</p>
+            </section>
+        </form>
+        <form id="cadastrar_escritores">
+            <label>Cadastrar Escritor</label>
+            <input type="text" id="escritor">
+            <input type="button" value="Cadastrar/Mostrar" onclick="addEscritor()">
+            <ul id="lista_escritores"></ul>
+        </form>
+        <form id="cadastrar_livros">
+            <Label>Escolha o escritor</Label>
+            <select id="comboboxEscritor" onclick="apagarListaComboBox()">
+                <option>Selecionar</option>
+            </select>
+            <label>Cadastrar Livro</label>
+            <input type="text" id="livro">
+            <input type="button" value="Cadastrar/Mostrar" onclick="addLivro()">
+            <ul id="lista_livros"></ul>
+        </form>
+    </div>
+</body>
+</html>

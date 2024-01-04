@@ -1,0 +1,64 @@
+.links1{
+    display: inline;
+}
+#div_geral{
+    background-color: white;
+    margin: auto;
+    max-width: 800px;
+}
+#form_escritores{
+    margin: auto;
+}
+#lista_principal{
+    margin-top: 100px;
+}
+#lista_principal > li{
+    margin: auto;
+    margin-top: 15px;
+    width: 400px;
+    border-right: solid 3px;
+    border-bottom: solid 3px;
+}
+#form_links_cadastrar{
+    margin: auto;
+    display: none;
+}
+#div_links{
+    border-right: 1px black;
+    width: 100px;
+    margin-right: 100px;
+}
+#form_links_iniciais > p{
+    margin: 0px 20px;
+}
+#cadastrar_escritores{
+    text-align: right;
+    margin: auto;
+    display: none;
+}
+#lista_escritores{
+    width: 300px;
+    margin: auto;
+}
+#lista_livros{
+    width: 300px;
+    margin: auto;
+}
+li{
+    list-style-type: none;
+    margin-top: 15px;
+    width: 200px;
+    border-right: solid 3px;
+    border-bottom: solid 3px;
+}
+#div_links > p{
+    margin: 40px 20px;
+}
+img{
+    text-align: right;
+}
+#cadastrar_livros{
+    text-align: right;
+    margin: auto;
+    display: none;
+}
